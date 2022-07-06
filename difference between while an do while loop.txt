@@ -1,0 +1,2 @@
+In While loop the loop will end as soon as we enter wrong input.
+In dowhile loop if we put wrong input, it will first print that wrong input and in second time if we print wrong input so it will exit the loop.

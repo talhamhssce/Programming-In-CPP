@@ -1,0 +1,7 @@
+PREMITIVE Data types are:
+1. integer(int): it stores 4 bytes (1,2,4,6,100)
+2. float: it stores 4 bytes (3.14,1.00,3.1457)
+       float can stores upto 7 decimal digtal,after 7 it uses another data type i.e. "doubles"
+3. character(char): it stores 1 byte (a,b,$,%,&,@)
+4. boolean: it stores 1 byte (1,0)
+    

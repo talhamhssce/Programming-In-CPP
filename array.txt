@@ -1,0 +1,8 @@
+ARRAY:
+Array is a list of variables of similar types:
+
+eg:
+{1,2,3,4}               This is an array
+{'c', 'f', 'g', 'i'}    This is an array
+
+{'d', 1, 'e', 4, 'f', 'g', 3, 'j'}    This is not an array

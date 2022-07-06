@@ -1,0 +1,162 @@
+OPERATORS:
+         Operators are symbols that tell the computer to perform some specific operations
+
+1. ARITHMETIC OPERATORS:
+   -Binary operator: +,-,*,/,%(modulo sign gives the remainder
+
+   -Unary operator: ++(Incrementer), --(Decrementer)
+
+   Pre Incremnenter(++a):           |       Post Incremnenter(a++):
+                                    |
+   Increment "a" instantly          |       Current value of "a" is preserved temporarily
+                                    |       "a" will get incremented before next increment
+                                    |       statement is executed.
+                                    | 
+   int a = 10;                      |       int a = 10;
+   int b;                           |       int b;
+                                    | 
+                                    |
+   b = ++a;                         |       b=a++;
+   cout << a << " " << b <<endl;    |       cout << a << " " << b <<endl;
+                                    |
+                                    |
+   Output:                          |       Output:                     
+   a = 11                           |       a = 11
+   b = 11                           |       b = 10            
+                                   
+
+
+2. RELATIONAL OPERATORS:
+                        Defines a relation between 2 operands.
+                        Returns a Boolean value.
+
+   A) ==: Gives true value if both operands have equal value.
+         Eg.: If a=5,b=5
+              then, (a==b) will return True      
+              and, (a!=b) will return False
+
+   B) !=: Gives true if both operands are not equal.
+
+   C) >: Gives true if left operand is greater than right operands.
+
+   D) <: Gives true if left operand is less than right operands.
+
+   E) >=: Gives true if left operand is greater than or equal to right operand.
+
+   F) <=: Gives true if left operand is less than or equal to right operand.
+
+
+3.LOGICAL OPERATORS:
+                    Used to connect multiple conditions/expressions together 
+                    or to reverse logical value.
+
+   A) &&: "AND" gives us True if both operands are True, else false.
+
+   B) ||: "OR" gives us True if atleast one of the operands are True.
+
+   C) !: "NOT" gives the opposite logical value of the operands. 
+         True becomes False and False becomes True.
+                                    
+
+4. BITWISE OPERATORS:
+                     Bitwise operator operate on bits and perform bit-by-bit operations.
+
+
+   A) & AND operator:
+         0101
+       & 0110
+       -------
+         0100
+
+   B) | OR operator:
+         0101
+       | 0110
+       -------
+         0111
+
+   C) ^ XOR operator:
+         0101
+       ^ 0110
+        -------
+         0011
+
+   D) ~ Ones complement:
+       ~ 0101
+        -------
+         1010
+
+   E) << LeftShift operator:
+         4 << 1
+         (0100)
+         =1000
+   
+   F) >> RightShift operator:
+         4 >> 1
+         (0100)
+         =0010
+
+   NOTE: 
+         a << n ----> a*2^n
+         a << n ----> a/2^n
+
+
+5) ASSIGNMENT OPERATORS:
+   
+   A) =: Assigns value of right operand to left operand A=B will put value of B in A
+
+   B) +=: Adds right operand to the left operand and assigns the result to left operand.
+      A+=B means A = A+B
+
+   C) -=: Subtracts right operand from the left operand and assigns the result to left operand.
+       A-=B means A=A-B
+
+   D) *=: Multiplies right operand with the left operand and assigns the result to left operand.
+       A*=B means A=A*B
+
+   E) /=: Divides left operand with the right operand and assigns the result to left operand.
+       A/=B means A=A/B
+
+
+6) MISSELEANEOUS OPERATORS:
+
+   A) Sizeof(): Returns the size of variable
+                Eg.: Put a;
+                     sizeof(a) ----> 4
+
+   B) Condition? X:Y : Returns value of X if condition is True or else value of Y.
+                       Eg.: int a=10
+                            int b=5
+                            but c = a>b? a-b:b-a
+
+   C) Cast: Convert one datatype to another.
+            Eg.: char ch='a'
+                 int(ch) ----> 97 (it gives the ASCII value of "a")
+
+   D) Commma(,): Causes a sequence of operations to be performed.
+                 Eg.: a = (2,3,4)
+                      last value will be assigned to 'a' in commma operators.
+                      i.e. a ----> 4
+
+   E) &: Returns the address of a variable
+
+
+   F) *: Pointer to a variable.
+
+
+OPERATOR PRECEDENCE:
+
+Postfix         |     () [] -> . ++ - -                    |        Left to right
+Unary           |     + - ! ~ ++ - - (type)* & sizeof      |        Right to left
+Multiplicative  |     * / %                                |        Left to right
+Additive        |     + -                                  |        Left to right
+Shift           |     << >>                                |        Left to right
+Relational      |     <<=>>=                               |        Left to right
+Equality        |     == !=                                |        Left to right
+Bitwise AND     |     &                                    |        Left to right
+Bitwise XOR     |     ^                                    |        Left to right
+Bitwise OR      |     |                                    |        Left to right
+Logical AND     |     &&                                   |        Left to right
+Logical OR      |     ||                                   |        Left to right
+Conditional     |     ?:                                   |        Right to left
+Assignment      |     = += -= *= /= %=>>= <<= &= ^= |=     |        Right to left
+Comma           |      ,                                   |        Left to right
